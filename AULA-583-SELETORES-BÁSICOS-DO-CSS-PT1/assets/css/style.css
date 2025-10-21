@@ -1,0 +1,51 @@
+* {
+    margin: 5;
+    padding: 0;
+}
+
+/* Seletor "ignorado" pois veio primeiro */
+h1, p {
+    color: blue;
+}
+
+body div section p, body div section h1 {
+    color: red;
+}
+
+/* A ordem dos seletores afetam a prioridade, sempre o último tem mais prioridade, só não acima da especificidade */
+h1, p {
+    color: green;
+}
+
+.color-red {
+    color: orange;
+}
+
+/* Posso utilizar classes numa tag ancestral + tag descendente para um padrão para as próximas como no exemplo abaixo */
+.allh2 h2, .allh2 p {
+    color: purple;
+}
+
+/*Neste exemplo abaixo, a tag "filha" herdou a cor da tag "pai" (mesmo não tendo nada colorizando ela diretamente) que recebeu a cor vermelha especificada pela classe ".pai"*/
+.pai {
+    color: red;
+}
+
+/* Se utilizarmos o código abaixo, toda tag descendente da tag div não herdará a cor vermelha da tag pai, pois o seletor "div" tem mais prioridade que a classe ".pai"
+
+div {
+    color: initial:
+}
+
+*/
+
+/* Podemos selecionar o descendente específico da tag pai utilizando o seletor composto como no exemplo abaixo, lembrando que a ultima regra tem mais prioridade */
+.pai .filha {
+    color: blue;
+}
+
+/* Neste caso para um elemento ser afetado pela regra abaixo, ele precisa conter ambas as classes "pai" e "filha" (detalhe deve estar junto as classes para que funcione)*/
+.pai.filha {
+    color: green;
+}
+
