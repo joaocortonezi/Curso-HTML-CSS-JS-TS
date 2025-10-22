@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando elementos com o atributo "meu-atributo" */
+[meu-atributo] {
+    color: blue;
+    border: 2px solid blue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando elementos com o atributo "meu-atributo" com valor nesse caso "two" */
+[meu-atributo="two"] {
+    color: red;
+    border: 2px solid red;
+}
+
+/* Estilizando TODOS os elementos com o atributo "meu-atributo" que possui o valor "contém" */
+[meu-atributo*="contem"] {
+    color: green;
+}
