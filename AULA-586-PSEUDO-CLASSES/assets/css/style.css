@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Neste caso adicionamos uma transição suave para todas as propriedades do elemento .heading */
+.heading {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Neste elemento, quando o mouse passar por cima, a cor do texto mudará para cinza */
+.heading:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Neste caso, removemos o sublinhado dos links */
+a {
+    text-decoration: none;
+}
+
+/* Neste caso, definimos a cor dos links que nunca foram visitados como azul*/
+a:link {
+    color: blue;
+}
+
+/* Neste caso, definimos a cor dos links que já foram visitados como vermelho*/
+a:visited {
+    color: red;
+}
+
+/* Neste caso, definimos a cor dos links quando estão sendo clicados como roxo*/
+a:active {
+    color: purple;
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: solid 1px black;
+}
+
+/*Neste caso ao clicarmos no input de checkbox nós alteramos também o seguinte "p"*/
+input:checked + p {
+    background: red;
+}
+
+/* Neste caso selecionamos apenas o primeiro filho da lista */
+.pai .lista li:first-child {
+    background: red;
+}
