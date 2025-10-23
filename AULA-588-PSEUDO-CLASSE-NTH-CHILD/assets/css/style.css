@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Neste caso eu seleciono todos os pares da lista e faço com oq o BG se torne vermelho*/
+ul li:nth-child(even) {
+    background-color: red;
+}
+
+/* Neste caso eu seleciono todos os impares da lista e faço com oq o BG se torne azul*/
+ul li:nth-child(odd) {
+    background-color: blue;
+}
+
+/* Neste caso eu seleciono o quinto item da lista e faço com oq o BG se torne roxo*/
+ul li:nth-child(5) {
+    background-color: purple;
+}
